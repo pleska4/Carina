@@ -1,0 +1,210 @@
+[2022-06-22 08:41:08] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-06-22 08:41:08] [1] [INFO] TEST [projectQA - testThreeCreateUser] STARTED at [11:41:08 2022-06-22]
+[2022-06-22 08:41:08] [1] [INFO] test
+[2022-06-22 08:41:09] [1] [INFO] Base properties loaded: api/users/user.properties
+[2022-06-22 08:41:09] [1] [INFO] Base properties loaded: api/users/user.properties
+[2022-06-22 08:41:10] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/posts
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+HTTP/1.1 201 Created
+Date: Wed, 22 Jun 2022 08:41:09 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 73
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1655887308
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options: nosniff
+Etag: W/"49-bw1D/M5qUHypOCZQwxRvqIDkT7w"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LuaKoR4XDIgAnwN4cB9phwi1SLJO4jl4r%2Bj0u%2FdiDKbyVjgRqq3zz2KZ2lvk%2F3MZ4LXjGtf3VNXsEZXf7lnEEgsLoGx%2BIvLCCP25Znt8yEt%2B57Q7CkAjQvCRpTcqmVu4XXO5N%2BaRHViSFjdTQivG"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 71f3aeeb68ec4175-HAM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+
+[2022-06-22 08:41:11] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/posts
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+HTTP/1.1 201 Created
+Date: Wed, 22 Jun 2022 08:41:11 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 73
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 998
+X-Ratelimit-Reset: 1655887308
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options: nosniff
+Etag: W/"49-bw1D/M5qUHypOCZQwxRvqIDkT7w"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=LTJUhs3kilCipWghUGXLHs5Yhh0HmzlecGAsQnFalMkPYtW8jet9Ro5HVRg5fi46PN8FdpwiPkkvmJUdkQ%2BOtf9dErDRcREtqlukKFe3XHon0QKLz6aaljmogGrGajfeoqr8prklFGpr2K60ZM%2B5"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 71f3aef49bf6d45f-HAM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+
+[2022-06-22 08:41:13] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/posts
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+HTTP/1.1 201 Created
+Date: Wed, 22 Jun 2022 08:41:12 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 73
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 997
+X-Ratelimit-Reset: 1655887308
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options: nosniff
+Etag: W/"49-bw1D/M5qUHypOCZQwxRvqIDkT7w"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=%2FaU9TJSDBdQ9eG7TawZ3LOr%2BW94KfZwfSHOX9MVkKPtVjh9BR37d2FHE1r0kRpfPtJ%2BkrZzur3AgkhK0Vs8eMpsaKSBE3IUSX86KpX5RhQBFvzsSZmv1C7O%2FvoPOu2%2B7Q38vJubkvbjdHn2GOWzj"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 71f3aefd9b9c7276-HAM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+
+[2022-06-22 08:41:15] [1] [INFO] Request method:	POST
+Request URI:	https://jsonplaceholder.typicode.com/posts
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+HTTP/1.1 201 Created
+Date: Wed, 22 Jun 2022 08:41:15 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 73
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 996
+X-Ratelimit-Reset: 1655887308
+Vary: Origin, X-HTTP-Method-Override, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: no-cache
+Pragma: no-cache
+Expires: -1
+Access-Control-Expose-Headers: Location
+Location: http://jsonplaceholder.typicode.com/posts/101
+X-Content-Type-Options: nosniff
+Etag: W/"49-bw1D/M5qUHypOCZQwxRvqIDkT7w"
+Via: 1.1 vegur
+CF-Cache-Status: DYNAMIC
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=w%2FNs0KB82XK2m8SRMuHn3tCROZlZid8aiGDwA7whYF6ORJrhEPzjesvKWiD1mIwTRZViZrLt4Clpz5vEFddGghVvh4pz71t0yNVfnPxcbsEczSFlkhdL8YaQEIc3avxed60TjpsxfOT419P9X1aZ"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 71f3af0cec0a7284-HAM
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "userId": 12,
+    "id": 101,
+    "title": "123456789",
+    "body": "mama"
+}
+
+[2022-06-22 08:41:15] [1] [INFO] TEST [projectQA - testThreeCreateUser] PASSED at [11:41:15 2022-06-22]

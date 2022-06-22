@@ -1,0 +1,50 @@
+[2022-06-22 08:58:45] [1] [WARN] Reporting disabled: using no op test run registrar
+[2022-06-22 08:58:45] [1] [INFO] TEST [projectQA - testGetUsers] STARTED at [11:58:45 2022-06-22]
+[2022-06-22 08:58:47] [1] [INFO] Request method:	GET
+Request URI:	https://jsonplaceholder.typicode.com/posts/1
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Multiparts:		<none>
+Cookies:		<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 22 Jun 2022 08:58:46 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+X-Powered-By: Express
+X-Ratelimit-Limit: 1000
+X-Ratelimit-Remaining: 999
+X-Ratelimit-Reset: 1651179326
+Vary: Origin, Accept-Encoding
+Access-Control-Allow-Credentials: true
+Cache-Control: max-age=43200
+Pragma: no-cache
+Expires: -1
+X-Content-Type-Options: nosniff
+Etag: W/"124-yiKdLzqO5gfBrJFrcdJ8Yq0LGnU"
+Via: 1.1 vegur
+CF-Cache-Status: HIT
+Age: 8367
+Expect-CT: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+Report-To: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=RFZdTnAYVEDPZclOndmcIBBVgprO0g2INqtX%2BCFWXi4AKHHQfsKhy6xW6RZ3XMYuVbVNyxBsTFwv9hz%2FO22iCr%2FjiPhSZDv3xV92ja2Nim4ujvQ4XQJILxc9TCb9ERuBzpMpx6ykZ15tkgd9bysG"}],"group":"cf-nel","max_age":604800}
+NEL: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
+Server: cloudflare
+CF-RAY: 71f3c8b95fe3727f-HAM
+Content-Encoding: gzip
+alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
+
+{
+    "userId": 1,
+    "id": 1,
+    "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
+    "body": "quia et suscipit\nsuscipit recusandae consequuntur expedita et cum\nreprehenderit molestiae ut ut quas totam\nnostrum rerum est autem sunt rem eveniet architecto"
+}
+
+[2022-06-22 08:58:47] [1] [INFO] JSON schema of version below or equal to draft-04 was detected
+[2022-06-22 08:58:47] [1] [INFO] Validation against Json schema successfully passed
+[2022-06-22 08:58:47] [1] [INFO] TEST [projectQA - testGetUsers] PASSED at [11:58:47 2022-06-22]
