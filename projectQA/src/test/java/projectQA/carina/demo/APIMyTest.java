@@ -11,18 +11,11 @@ import com.qaprosoft.apitools.validation.JsonCompareKeywords;
 import com.qaprosoft.carina.core.foundation.IAbstractTest;
 import com.qaprosoft.carina.core.foundation.api.http.HttpResponseStatusType;
 import com.qaprosoft.carina.core.foundation.utils.ownership.MethodOwner;
-import com.qaprosoft.carina.core.foundation.utils.tag.Priority;
-import com.qaprosoft.carina.core.foundation.utils.tag.TestPriority;
 import com.qaprosoft.carina.core.foundation.api.APIMethodPoller;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.time.temporal.ChronoUnit;
 
-import projectQA.carina.demo.api.DeleteUserMethod;
-import projectQA.carina.demo.api.GetUserMethods;
-import projectQA.carina.demo.api.PostUserMethod;
-import projectQA.carina.demo.api.pleskach.DeleteTwoUserMethod;
-import projectQA.carina.demo.api.pleskach.GetOneUserMethod;
-import projectQA.carina.demo.api.pleskach.PostThreeUserMethod;
+import projectQA.carina.demo.api.pleskach.*;
 
 /**
  * This sample shows how create REST API tests.
@@ -32,14 +25,31 @@ import projectQA.carina.demo.api.pleskach.PostThreeUserMethod;
 public class APIMyTest implements IAbstractTest {
     private static final Logger LOGGER = LoggerFactory.getLogger(MethodHandles.lookup().lookupClass());
 
+    @Test()
+    @MethodOwner(owner = "pleska4")
+    public void testOneGet() {
+        GetOneMethod getOneMethod = new GetOneMethod();
+        getOneMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
+        getOneMethod.callAPI();
+        getOneMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        getOneMethod.validateResponseAgainstSchema("myget/get1/rs.schema");
+    }
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
-    public void testCreateUser() throws Exception {
+    @MethodOwner(owner = "pleska4")
+    public void testTwoDelete() {
+        DeleteTwoMethod deleteTwoMethod = new DeleteTwoMethod();
+        deleteTwoMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
+        deleteTwoMethod.callAPI();
+        deleteTwoMethod.validateResponse();
+    }
+    @Test()
+    @MethodOwner(owner = "pleska4")
+    public void testThreeCreate() throws Exception {
         LOGGER.info("test");
         setCases("4555,54545");
-        PostUserMethod api = new PostUserMethod();
-        api.setProperties("api/users/user.properties");
+        PostThreeMethod api = new PostThreeMethod();
+        api.setProperties("myget/user.properties");
 
         AtomicInteger counter = new AtomicInteger(0);
 
@@ -54,12 +64,66 @@ public class APIMyTest implements IAbstractTest {
     }
 
     @Test()
-    @MethodOwner(owner = "qpsdemo")
-    public void testThreeCreateUser() throws Exception {
+    @MethodOwner(owner = "pleska4")
+     public void testFourDelete() {
+        DeleteFourMethod deleteFourMethod = new DeleteFourMethod();
+        deleteFourMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
+        deleteFourMethod.callAPI();
+        deleteFourMethod.validateResponse();
+    }
+
+    @Test()
+    @MethodOwner(owner = "pleska4")
+     public void testFivePut(){
+        PutFiveMethod putFiveMethod = new PutFiveMethod();
+        putFiveMethod.setProperties("myput/user.properties");
+        putFiveMethod.callAPIExpectSuccess();
+        putFiveMethod.validateResponse();
+    }
+
+    @Test()
+    @MethodOwner(owner = "pleska4")
+    public void testSixPut(){
+        PutSixMethod putSixMethod = new PutSixMethod();
+        putSixMethod.setProperties("myput/postos.properties");
+        putSixMethod.callAPIExpectSuccess();
+        putSixMethod.validateResponse();
+    }
+
+    @Test()
+    @MethodOwner(owner = "pleska4")
+    public void testSevenPut(){
+        PutSevenMethod putSevenMethod = new PutSevenMethod();
+        putSevenMethod.setProperties("myput/seven.properties");
+        putSevenMethod.callAPIExpectSuccess();
+        putSevenMethod.validateResponse();
+    }
+    @Test()
+    @MethodOwner(owner = "pleska4")
+    public void testEightDelete() {
+        DeleteEightMethod deleteEightMethod = new DeleteEightMethod();
+        deleteEightMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
+        deleteEightMethod.callAPI();
+        deleteEightMethod.validateResponse();
+    }
+
+    @Test()
+    @MethodOwner(owner = "pleska4")
+    public void testNineGet() {
+        GetNineMethod getNineMethod = new GetNineMethod();
+        getNineMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
+        getNineMethod.callAPI();
+        getNineMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
+        getNineMethod.validateResponseAgainstSchema("myget/get2/rs.schema");
+    }
+
+    @Test()
+    @MethodOwner(owner = "pleska4")
+    public void testTenCreate() throws Exception {
         LOGGER.info("test");
         setCases("4555,54545");
-        PostThreeUserMethod api = new PostThreeUserMethod();
-        api.setProperties("api/users/user.properties");
+        PostTenMethod api = new PostTenMethod();
+        api.setProperties("mypost/user.properties");
 
         AtomicInteger counter = new AtomicInteger(0);
 
@@ -70,47 +134,8 @@ public class APIMyTest implements IAbstractTest {
                 .pollEvery(1, ChronoUnit.SECONDS)
                 .stopAfter(10, ChronoUnit.SECONDS)
                 .execute();
-                api.validateResponse();
-    }
-
-    @Test()
-    @MethodOwner(owner = "qpsdemo")
-    public void testCreateUserMissingSomeFields() throws Exception {
-        PostUserMethod api = new PostUserMethod();
-        api.getProperties().remove("name");
-        api.getProperties().remove("username");
-        api.expectResponseStatus(HttpResponseStatusType.CREATED_201);
-        api.callAPI();
         api.validateResponse();
     }
 
-    @Test()
-    @MethodOwner(owner = "qpsdemo")
-    public void testGetUsers() {
-        GetOneUserMethod getOneUsersMethod = new GetOneUserMethod();
-        getOneUsersMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
-        getOneUsersMethod.callAPI();
-        getOneUsersMethod.validateResponse(JSONCompareMode.STRICT, JsonCompareKeywords.ARRAY_CONTAINS.getKey());
-        getOneUsersMethod.validateResponseAgainstSchema("api/users/get1/rs.schema");
-    }
 
-    @Test()
-    @MethodOwner(owner = "qpsdemo")
-    @TestPriority(Priority.P1)
-    public void testDeleteUsers() {
-        DeleteUserMethod deleteUserMethod = new DeleteUserMethod();
-        deleteUserMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
-        deleteUserMethod.callAPI();
-        deleteUserMethod.validateResponse();
-    }
-
-    @Test()
-    @MethodOwner(owner = "qpsdemo")
-    @TestPriority(Priority.P1)
-    public void testTwoDeleteUsers() {
-        DeleteTwoUserMethod deleteTwoUserMethod = new DeleteTwoUserMethod();
-        deleteTwoUserMethod.expectResponseStatus(HttpResponseStatusType.OK_200);
-        deleteTwoUserMethod.callAPI();
-        deleteTwoUserMethod.validateResponse();
-    }
 }
