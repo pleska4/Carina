@@ -33,8 +33,11 @@
       <change beforePath="$PROJECT_DIR$/reports/1655888324686/emailable-report.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/1655888324686/test.log" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/projectQA/carina/demo/myweb/pages/MyHomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/projectQA/carina/demo/myweb/pages/MyHomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/projectQA/carina/demo/onliner/HomeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/projectQA/carina/demo/onliner/HomeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/_config.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/_config.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/projectQA/carina/demo/onliner/HomeTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/projectQA/carina/demo/onliner/HomeTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -341,6 +344,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HomeTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="projectQA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="projectQA.carina.demo.onliner.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="projectQA.carina.demo.onliner" />
+      <option name="MAIN_CLASS_NAME" value="projectQA.carina.demo.onliner.HomeTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="HomeTest.openHomePage" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="projectQA" />
       <extension name="coverage">
@@ -412,31 +432,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebSampleTest.testNewsSearch" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="projectQA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="projectQA.carina.demo.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="projectQA.carina.demo" />
-      <option name="MAIN_CLASS_NAME" value="projectQA.carina.demo.WebSampleTest" />
-      <option name="METHOD_NAME" value="testNewsSearch" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.HomeTest.openHomePage" />
+        <item itemvalue="TestNG.HomeTest" />
         <item itemvalue="TestNG.HomeTest.verifyHomePage" />
         <item itemvalue="TestNG.WebSampleTest.testModelSpecs" />
         <item itemvalue="TestNG.WebSampleTest" />
-        <item itemvalue="TestNG.WebSampleTest.testNewsSearch" />
       </list>
     </recent_temporary>
   </component>
